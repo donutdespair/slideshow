@@ -108,17 +108,17 @@ p {font-size: 45px; letter-spacing: 4px; height: 10px; color: white;  text-align
 
 <script>
 var slideIndex = 1;
-showSlides(slideIndex);
+showDiv(slideIndex);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showDiv(slideIndex += n);
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showDiv(slideIndex = n);
 }
 
-function showSlides(n) {
+function showDiv(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   if (n > slides.length) {slideIndex = 1} 
